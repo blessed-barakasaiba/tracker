@@ -13,6 +13,15 @@ class _AddLogScreenState extends State<AddLogScreen> {
   double _WaterInTake = 0;
   bool _alcohol = false;
   bool _caffeine = false;
+  bool _mchicha = false;
+  bool _chinese = false;
+  bool _carrot = false;
+  bool _figiri = false;
+  double _eggs = 0;
+  bool _onion = false;
+  bool _tomato = false;
+  bool _nuts = false;
+
   final TextEditingController _notesController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
@@ -24,6 +33,14 @@ class _AddLogScreenState extends State<AddLogScreen> {
       waterIntake: _WaterInTake,
       alcohol: _alcohol,
       caffeine: _caffeine,
+      mchicha: _mchicha,
+      chinese: _chinese,
+      carrot: _carrot,
+      figiri: _figiri,
+      eggs: _eggs,
+      onion: _onion,
+      tomato: _tomato,
+      nuts: _nuts,
       notes: _notesController.text,
     );
 
@@ -51,6 +68,17 @@ class _AddLogScreenState extends State<AddLogScreen> {
               }),
             ),
 
+            Text("Eggs: ${_eggs.toStringAsFixed(1)}"),
+            Slider(
+              value: _eggs,
+              min: 0,
+              max: 5,
+              divisions: 1,
+              onChanged: (val) => setState(() {
+                _eggs = val;
+              }),
+            ),
+
             CheckboxListTile(
               title: const Text("Alcohol"),
               value: _alcohol,
@@ -64,6 +92,62 @@ class _AddLogScreenState extends State<AddLogScreen> {
               title: const Text("Caffein"),
               onChanged: (val) => setState(() {
                 _caffeine = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _carrot,
+              title: const Text("Carrot"),
+              onChanged: (val) => setState(() {
+                _carrot = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _mchicha,
+              title: const Text("Mchicha"),
+              onChanged: (val) => setState(() {
+                _mchicha = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _chinese,
+              title: const Text("Chinese"),
+              onChanged: (val) => setState(() {
+                _chinese = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _figiri,
+              title: const Text("Figiri"),
+              onChanged: (val) => setState(() {
+                _figiri = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _onion,
+              title: const Text("Onion"),
+              onChanged: (val) => setState(() {
+                _onion = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _nuts,
+              title: const Text("Nuts"),
+              onChanged: (val) => setState(() {
+                _nuts = val!;
+              }),
+            ),
+
+            CheckboxListTile(
+              value: _tomato,
+              title: const Text("Tomato"),
+              onChanged: (val) => setState(() {
+                _tomato = val!;
               }),
             ),
 

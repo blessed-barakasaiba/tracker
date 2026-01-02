@@ -17,6 +17,30 @@ class DailyLog extends HiveObject {
   bool caffeine;
 
   @HiveField(4)
+  bool chinese;
+
+  @HiveField(5)
+  bool mchicha;
+
+  @HiveField(6)
+  double eggs;
+
+  @HiveField(7)
+  bool carrot;
+
+  @HiveField(8)
+  bool onion;
+
+  @HiveField(9)
+  bool tomato;
+
+  @HiveField(10)
+  bool figiri;
+
+  @HiveField(11)
+  bool nuts;
+
+  @HiveField(12)
   String notes;
 
   DailyLog({
@@ -24,6 +48,14 @@ class DailyLog extends HiveObject {
     this.waterIntake = 0,
     this.alcohol = false,
     this.caffeine = false,
+    this.chinese=false,
+    this.mchicha=false,
+    this.eggs=0,
+    this.carrot=false,
+    this.onion=false,
+    this.tomato=false,
+    this.figiri=false,
+    this.nuts=false,
     this.notes = "",
   });
 }
