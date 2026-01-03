@@ -5,7 +5,7 @@ import '../services/hive_service.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await HiveService.initHive();
-  
+
   runApp(const MyApp());
 }
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Pelvic Tracker",
+      title: "Tracker",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomeScreen(),

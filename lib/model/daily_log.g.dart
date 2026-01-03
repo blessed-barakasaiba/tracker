@@ -23,7 +23,7 @@ class DailyLogAdapter extends TypeAdapter<DailyLog> {
       caffeine: fields[3] as bool,
       chinese: fields[4] as bool,
       mchicha: fields[5] as bool,
-      eggs: fields[6] as double,
+      eggs: fields[6] as int,
       carrot: fields[7] as bool,
       onion: fields[8] as bool,
       tomato: fields[9] as bool,

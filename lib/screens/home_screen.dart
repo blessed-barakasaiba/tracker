@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Pelvic Tracker")),
+      appBar: AppBar(title: const Text("Behavior Tracker")),
       body: ValueListenableBuilder<LazyBox<DailyLog>>(
         valueListenable: box.listenable(),
         builder: (context, box, _) {

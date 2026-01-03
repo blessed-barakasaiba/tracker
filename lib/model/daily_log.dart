@@ -23,7 +23,7 @@ class DailyLog extends HiveObject {
   bool mchicha;
 
   @HiveField(6)
-  double eggs;
+  int eggs;
 
   @HiveField(7)
   bool carrot;
